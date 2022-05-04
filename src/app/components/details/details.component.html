@@ -1,0 +1,96 @@
+
+
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">
+      Détails du Patient  <a class="edit-link"   data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-edit mr-1"></i>Edit</a></h4>
+
+  </div>
+  <div class="card-body">
+    <ul class="nav nav-tabs nav-tabs-top nav-justified">
+      <li class="nav-item"><a class="nav-link active" href="#top-justified-tab1" data-toggle="tab">Fiche Patients</a></li>
+      <li class="nav-item"><a class="nav-link" href="#top-justified-tab2" data-toggle="tab">Fiche Consultation</a></li>
+      <li class="nav-item"><a class="nav-link" href="#top-justified-tab3" data-toggle="tab">Ordonnance</a></li>
+      <li class="nav-item"><a class="nav-link" href="#top-justified-tab3" data-toggle="tab">Dossier Médicale</a></li>
+
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane show active" id="top-justified-tab1">
+  <!-- Personal Details Tab -->
+
+
+    <!-- Personal Details -->
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">
+              <span>Personal Details</span>
+              <a class="edit-link"   data-toggle="modal" href="#edit_personal_details"><i class="fa fa-edit mr-1"></i>Edit</a>
+            </h5>
+            <div class="row">
+              <p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Nom Et Prénom</p>
+              <p class="col-sm-10">{{patient.nomprenom}}</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Date De Naissance</p>
+              <p class="col-sm-10">{{patient.datenaissance}}</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Sexe</p>
+              <p class="col-sm-10">{{patient.sexe}}</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Email </p>
+              <p class="col-sm-10">{{patient.email}}</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Numéro Télèphone</p>
+              <p class="col-sm-10">{{patient.numtel}}</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-2 text-muted text-sm-right mb-0">Address</p>
+              <p class="col-sm-10 mb-0">{{patient.adresse}}
+
+            </div>
+          </div>
+        </div>
+<!-- edit model -->
+      </div>
+    </div>
+    <!-- /Personal Details -->
+
+
+  <!-- /Personal Details Tab -->
+      </div>
+      <div class="tab-pane" id="top-justified-tab2">
+        Tab content 2
+      </div>
+
+      <div class="tab-pane" id="top-justified-tab3">
+        Tab content 3
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
